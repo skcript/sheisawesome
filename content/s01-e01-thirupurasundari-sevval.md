@@ -3,7 +3,7 @@ title: "SiA #1: Thirupurasundari Sevvel, Architect"
 date: 2017-12-01T10:39:18+05:30
 pretitle: "SiA #1"
 description: We met Thirupuransundari Sevvel, an architect par excellence who not only has an interesting career as an architect but is the brain behind the movement, Nam Veedu, Nam Oor, Nam Kadhai (Our Home, Our City, Our Story).
-image: /heroes/thirupurasundari.jpg
+image: "/images/hero/1_thirupurasundari.jpg"
 isThumbnailPresent: yes
 category: culture
 author: sankriti
@@ -126,10 +126,4 @@ We inquired about the publishing date, and she replied with a smile that she did
 
 This is for the women who stand on their own feet. This is for the women who aren’t afraid to follow their dreams. This is for the women who are making a difference, in their own small ways. This is for the she-roes. Most of all, this is for you - you are awesome.
 
-This is a part of **SiA,** an initiative by **Skcript** to celebrate the women of substance.  
-
-----------
-
-<div class="text-center">
-  <img src="/images/sia_logo.svg" alt="She Is Awesome (SiA) Logo" style="width: 200px; margin-top: 20px; margin-bottom: 30px;">
-</div>
+This is a part of **SiA,** an initiative by **Skcript** to celebrate the women of substance.

@@ -1,5 +1,8 @@
 <footer id="site-footer">
     <div class="container">
+      <div class="footer-sia">
+        <img src="/images/sia_logo.svg" alt="She Is Awesome (SiA) Logo" />
+      </div>
       {{ with .Site.Params.instagram }}
         <a href="https://www.instagram.com/{{ . }}/" title="Instagram" target="_blank"><span class="tooltip"><i class="fa fa-instagram"></i></span></a>
       {{ end }}
@@ -12,8 +15,7 @@
       {{ with .Site.Params.github }}
         <a href="https://www.github.com/{{ . }}" title="GitHub" target="_blank"><span class="tooltip"><i class="fa fa-github"></i></span></a>
       {{ end }}
-      <a href="{{ .Site.BaseURL }}index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
-      <section>&copy; <a href="https://www.skcript.com/" target="_blank">Skcript</a> 2017 | All rights reserved</section>
+      <section>Copyright &copy; 2017 <a href="https://www.skcript.com/" target="_blank">Skcript Technologies Pvt. Ltd.</a></section>
     </div>
 </footer>
 

@@ -438,12 +438,12 @@ figure {
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1rem; }
+  font: normal normal normal 0.9rem/1.6 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.9rem; }
 
 body {
   color: #1B1818;
-  background: #FFF6F5;
+  background: #FFFEF3;
   font-size: 1rem; }
 
 p,
@@ -468,7 +468,7 @@ h5 {
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  color: #B1606B; }
+  color: #222222; }
   h1:not(:first-child),
   h2:not(:first-child),
   h3:not(:first-child),
@@ -946,9 +946,25 @@ caption {
   =============== */
 /* Layout
   =============== */
-.sia-logo img {
-  width: 170px;
-  margin: 0 auto; }
+body {
+  padding: 77px; }
 
-.content img {
-  width: 100%; }
+.sia-logo {
+  text-align: center; }
+  .sia-logo img {
+    width: 170px;
+    margin: 0 auto; }
+
+.content {
+  padding: 50px 0; }
+  .content img {
+    width: 100%; }
+
+footer {
+  text-align: center; }
+  footer .footer-sia img {
+    width: 100px; }
+
+.post-header {
+  text-align: center;
+  margin-bottom: 55px; }
