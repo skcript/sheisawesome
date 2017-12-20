@@ -104,7 +104,7 @@ h5 {
 // Link styling
 a {
 	color: $link-color;
-	text-decoration: none;
+	text-decoration: underline;
 	&:hover,
 	&:active,
 	&:focus {
