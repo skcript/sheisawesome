@@ -35,5 +35,7 @@ description = "SiA by Skcript"
   name = "Skcript"
   homepage = "https://sia.skcript.com"
 
-instagram = "SkcriptSIA"
-twitter = "SiaSkcript"
+[params]
+  instagram = "SkcriptSIA"
+  twitter = "SiaSkcript"
+  googleanalytics = "UA-46679613-16"
