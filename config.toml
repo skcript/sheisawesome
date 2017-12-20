@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "{TITLE}"
+title = "She is Awesome"
+theme = "sia"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
