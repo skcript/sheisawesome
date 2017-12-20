@@ -1,7 +1,6 @@
 baseURL = "/"
 languageCode = "en-gb"
 title = "She is Awesome"
-theme = "sia"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
@@ -30,3 +29,11 @@ baseName = "_headers"
 isPlainText = true
 notAlternative = true
 
+description = "SiA by Skcript"
+
+[author]
+  name = "Skcript"
+  homepage = "https://sia.skcript.com"
+
+instagram = "SkcriptSIA"
+twitter = "SiaSkcript"

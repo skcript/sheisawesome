@@ -60,8 +60,6 @@ gulp.task('sass', () => {
     ])
     .pipe($.plumber({ errorHandler: onError }))
     .pipe($.print())
-    .pipe($.sassLint())
-    .pipe($.sassLint.format())
     .pipe($.sass({ precision: 5, importer: tildeImporter }))
     .pipe($.autoprefixer(['ie >= 10', 'last 2 versions']))
     .pipe($.if(isProduction, $.cssnano({ discardUnused: false, minifyFontValues: false })))
