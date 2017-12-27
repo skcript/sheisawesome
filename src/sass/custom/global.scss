@@ -1,8 +1,8 @@
 body {
     padding: 70px;
-    @include breakpoint(tablet){
-      padding: 25px;
-    }
+    // @include breakpoints(laptop){
+    //   padding: 25px;
+    // }
 }
 
 .sia-logo {
