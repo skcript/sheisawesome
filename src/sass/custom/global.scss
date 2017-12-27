@@ -1,5 +1,8 @@
 body {
-    padding: 77px;
+    padding: 70px;
+    @include breakpoint(tablet){
+      padding: 25px;
+    }
 }
 
 .sia-logo {
@@ -21,6 +24,9 @@ body {
 
 footer {
     text-align: center;
+    p{
+      font-size: 14px;
+    }
     .footer-sia {
         img {
             width: 100px;
@@ -30,5 +36,4 @@ footer {
 
 .post-header {
   text-align: center;
-  margin-bottom: 55px;
 }
