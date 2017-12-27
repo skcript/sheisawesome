@@ -15,7 +15,7 @@
 	}
 }
 
-@mixin breakpoints($point) {
+@mixin breakpoint($point) {
     @if $point==large-desktop {
         @media (min-width: 104em) {
             @content ;

@@ -948,6 +948,9 @@ caption {
   =============== */
 body {
   padding: 70px; }
+  @media (max-width: 64em) {
+    body {
+      padding: 25px; } }
 
 .sia-logo {
   text-align: center; }
