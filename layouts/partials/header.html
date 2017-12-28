@@ -1,8 +1,8 @@
 <header id="site-header">
 	<div class="container">
     <div class="sia-logo">
-      <a href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }}">
-        <img src="{{ .Site.BaseURL }}images/sia_logo.svg" alt="{{ .Site.Title }}">
+      <a href="{{ .Site.BaseURL  | relURL }}" alt="{{ .Site.Title }}">
+        <img src="{{ .Site.BaseURL  | relURL }}images/sia_logo.svg" alt="{{ .Site.Title }}">
       </a>
     </div>
 		<p class="blog-description">{{ .Site.Params.description }}</p>

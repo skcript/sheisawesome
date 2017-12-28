@@ -947,7 +947,10 @@ caption {
 /* Layout
   =============== */
 body {
-  padding: 77px; }
+  padding: 70px; }
+  @media (max-width: 64em) {
+    body {
+      padding: 25px; } }
 
 .sia-logo {
   text-align: center; }
@@ -962,9 +965,10 @@ body {
 
 footer {
   text-align: center; }
+  footer p {
+    font-size: 14px; }
   footer .footer-sia img {
     width: 100px; }
 
 .post-header {
-  text-align: center;
-  margin-bottom: 55px; }
+  text-align: center; }

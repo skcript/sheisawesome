@@ -1,10 +1,12 @@
-baseURL = "/"
+baseURL = "https://sia.skcript.com/"
 languageCode = "en-gb"
 title = "She is Awesome"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
 disableAliases = true
+
+relativeURLs = true
 
 # add redirects/headers
 [outputs]
@@ -39,3 +41,6 @@ description = "SiA by Skcript"
   instagram = "SkcriptSIA"
   twitter = "SiaSkcript"
   googleanalytics = "UA-46679613-16"
+  author = "Skcript"
+  brand_color = "#B1606B"
+  image = ""

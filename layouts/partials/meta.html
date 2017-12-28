@@ -1,29 +1,66 @@
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="author" content="{{ .Site.Params.author }}">
-  {{ with .Site.Params.keywords }}
-        <meta name="keywords" content="{{ range $index, $element := $.Site.Params.keywords }}{{ if gt $index 0 }}, {{ end }}{{ . | safeHTML }}{{ else }}{{ . | safeHTML }}{{ end }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+
+{{ with .Site.Params.keywords }}
+  <meta name="keywords" content="{{ range $index, $element := $.Site.Params.keywords }}{{ if gt $index 0 }}, {{ end }}{{ . | safeHTML }}{{ else }}{{ . | safeHTML }}{{ end }}">
+{{ end }}
+
+<!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="twitter:url" content="{{ .Permalink }}">
+  <meta name="twitter:image" content="">
+  {{ with .Site.Params.twitter }}
+    <meta name="twitter:site" content="@{{ . }}">
+    <meta name="twitter:creator" content="@{{ . }}">
   {{ end }}
-	{{ with .Site.Params.twitter_name }}
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@https://twitter.com/{{ . }}">
-        <meta name="twitter:creator" content="@https://twitter.com/{{ . }}">
-        <meta name="twitter:domain" content="{{ $.Site.BaseURL }}">
-	{{ end }}
-        <meta property="og:site_name" content="{{ .Site.Title }}">
-        <meta property="og:title" content="{{ .Site.Title }}">
-        <meta property="og:url" content="{{ .Permalink }}">
-        <meta property="og:description" content="{{ .Site.Params.description }}">
-    {{ if .IsPage }}
-        <meta property="og:type" content="article" />
-        <meta property="og:article:author" content="{{ .Site.Params.author }}" />
-        <meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
-    {{ else }}
-        <meta property="og:type" content="website" />
-    {{ end }}
-        {{ .Hugo.Generator }}
+
+<!-- FB meta tags -->
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+  <meta property="article:author" content="">
+  <meta property="og:type" content="website">
+
+{{ if .IsPage }}
+  <meta property="og:type" content="article" />
+  <meta property="og:article:author" content="{{ .Site.Params.author }}" />
+  <meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+{{ else }}
+  <meta property="og:type" content="website" />
+{{ end }}
+
+  <!-- Other Static Meta Tags -->
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- <link rel="manifest" href="manifest.json"> -->
+
+  <!-- Color Meta Tags -->
+  <meta name="theme-color" content="{{ .Site.Params.brand_color }}">
+  <meta name="msapplication-TileColor" content="{{ .Site.Params.brand_color }}">
+  <meta name="theme-color" content="{{ .Site.Params.brand_color }}">
+
+  <!-- Favicon Links -->
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon-152-precomposed.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon-120-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon-114-precomposed.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon-180-precomposed.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon-72-precomposed.png">
+  <link rel="apple-touch-icon" href="../images/favicon-57.png">
+  <link rel="icon" href="../images/favicon-32.png" sizes="32x32">
+  <meta name="msapplication-TileImage" content="../images/favicon-144.png">
+  <link rel="icon" sizes="192x192" href="../images/favicon-192.png">
